@@ -1,14 +1,7 @@
-from cmath import log
-from distutils.sysconfig import PREFIX
 import discord
-from dotenv import load_dotenv
-import os
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
-load_dotenv()
-
-TOKEN = os.environ['TOKEN']
-
+TOKEN = "MTEwMzY2NjI3Nzg2OTk0ODkzOA.GWlsCF.HutxwXQMZLWOqIFgG4lnMZlDMFjGZ6JKiiPWGg"
 @client.event
 async def on_ready():
     print('\n준비 완료\n작동 중지를 원하신다면 컨트롤 + C를 눌러주세요')
