@@ -7,7 +7,6 @@ intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 load_dotenv()
 
-PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
 
 @client.event
